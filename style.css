@@ -1,0 +1,97 @@
+body{
+  margin:0;
+  font-family:system-ui;
+  background:#0b0b0b;
+  color:#fff;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:radial-gradient(circle,#1f1f1f,#000);
+  animation:fade 1.5s;
+}
+
+.hero h1{font-size:3rem}
+.hero a{
+  margin-top:20px;
+  padding:15px 40px;
+  background:#fff;
+  color:#000;
+  border-radius:40px;
+  text-decoration:none;
+}
+
+.store{padding:60px 30px}
+.store h2{text-align:center;margin-bottom:40px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#141414;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-12px) scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h3{margin:15px}
+.stars{color:gold;margin:0 15px}
+.price{margin:10px 15px;font-weight:bold}
+
+.card button{
+  margin:15px;
+  width:calc(100% - 30px);
+  padding:12px;
+  background:#fff;
+  color:#000;
+  border:none;
+  border-radius:12px;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.8);
+}
+
+.box{
+  background:#111;
+  width:90%;
+  max-width:400px;
+  margin:70px auto;
+  padding:25px;
+  border-radius:20px;
+}
+
+.box input{
+  width:100%;
+  margin-bottom:10px;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>BANAN | Coaches Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<!-- HERO -->
+<section class="hero">
+  <h1>اختار كوتشك المثالي</h1>
+  <p>كوتشات رياضية احترافية – جودة عالية – توصيل سريع</p>
+  <a href="#store">تسوق الآن</a>
+</section>
+
+<!-- STORE -->
+<section class="store" id="store">
+  <h2>الكوتشات المتاحة</h2>
+
+  <div class="grid">
+    <!-- 20 كارت -->
+    <!-- 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528701800489-20be9c2f1c37">
+      <h3>كوتش Air Pro</h3>
+      <div class="stars">★★★★★</div>
+      <div class="price">1200 جنيه</div>
+      <button onclick="order('Air Pro','1200')">اطلب الآن</button>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+      <h3>كوتش Street Max</h3>
+      <div class="stars">★★★★☆</div>
+      <div class="price">950 جنيه</div>
+      <button onclick="order('Street Max','950')">اطلب الآن</button>
+    </div>
+
+    <!-- 3 -->
+    <div class="card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"><h3>Runner X</h3><div class="stars">★★★★★</div><div class="price">1100 جنيه</div><button onclick="order('Runner X','1100')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6"><h3>Urban Flex</h3><div class="stars">★★★★☆</div><div class="price">890 جنيه</div><button onclick="order('Urban Flex','890')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"><h3>Speed Run</h3><div class="stars">★★★★★</div><div class="price">1300 جنيه</div><button onclick="order('Speed Run','1300')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329"><h3>Night Trainer</h3><div class="stars">★★★★★</div><div class="price">1250 جنيه</div><button onclick="order('Night Trainer','1250')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3"><h3>Core Fit</h3><div class="stars">★★★★☆</div><div class="price">870 جنيه</div><button onclick="order('Core Fit','870')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1585386959984-a41552231693"><h3>Power Step</h3><div class="stars">★★★★★</div><div class="price">1400 جنيه</div><button onclick="order('Power Step','1400')">اطلب الآن</button></div>
+
+    <!-- كرر نفس النمط لحد 20 -->
+    <div class="card"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf"><h3>Elite Run</h3><div class="stars">★★★★★</div><div class="price">1350 جنيه</div><button onclick="order('Elite Run','1350')">اطلب الآن</button></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"><h3>Street Neo</h3><div class="stars">★★★★☆</div><div class="price">980 جنيه</div><button onclick="order('Street Neo','980')">اطلب الآن</button></div>
+
+    <!-- (كملنا 10 – كررهم أو انسخهم توصل 20) -->
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="box">
+    <span onclick="closeOrder()">×</span>
+    <h3>بيانات الطلب</h3>
+    <input id="n" placeholder="الاسم">
+    <input id="p" placeholder="رقم الهاتف">
+    <input id="a" placeholder="العنوان">
+    <input id="s" placeholder="المقاس">
+    <input id="c" placeholder="اللون">
+    <input id="q" placeholder="الكمية">
+    <button onclick="send()">إرسال واتساب</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
